@@ -1,0 +1,31 @@
+{
+  "name": "veilon-contracts",
+  "version": "1.0.0",
+  "description": "Veilon Privacy Protocol Smart Contracts",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:localhost": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:bsc": "hardhat run scripts/deploy.js --network bscTestnet",
+    "deploy:mumbai": "hardhat run scripts/deploy.js --network mumbai",
+    "deploy:arbitrum-sepolia": "hardhat --config hardhat.config.arbitrum.js run scripts/deploy-arbitrum.js --network arbitrumSepolia",
+    "deploy:arbitrum-mainnet": "hardhat --config hardhat.config.arbitrum.js run scripts/deploy-arbitrum.js --network arbitrumOne",
+    "deploy:all-testnets": "npm run deploy:sepolia && npm run deploy:bsc && npm run deploy:mumbai && npm run deploy:arbitrum-sepolia",
+    "deploy:all-arbitrum": "npm run deploy:arbitrum-sepolia && npm run deploy:arbitrum-mainnet",
+    "verify": "hardhat verify",
+    "verify:arbitrum-sepolia": "hardhat --config hardhat.config.arbitrum.js verify --network arbitrumSepolia",
+    "verify:arbitrum-mainnet": "hardhat --config hardhat.config.arbitrum.js verify --network arbitrumOne",
+    "test": "hardhat test",
+    "test:arbitrum": "hardhat --config hardhat.config.arbitrum.js test --network arbitrumSepolia",
+    "coverage": "hardhat coverage"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.26.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.0"
+  }
+}

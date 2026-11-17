@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "version": ">= 16.18.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_ETHERSCAN_API_KEY": "B1U18KNWNRF73Y58K35G2E84AN6I1W9SJZ"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_ETHERSCAN_API_KEY": "B1U18KNWNRF73Y58K35G2E84AN6I1W9SJZ"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_ETHERSCAN_API_KEY": "B1U18KNWNRF73Y58K35G2E84AN6I1W9SJZ"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

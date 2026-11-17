@@ -1,0 +1,122 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Circuit files and artifacts
+circuits/
+retrieved_circuits/
+**/build/circuits/
+**/*_js/
+**/*.wasm
+**/*.zkey
+**/*.r1cs
+**/*.sym
+**/*.wtns
+**/powersOfTau*.ptau
+
+# Build directories
+build/
+dist/
+out/
+**/artifacts/
+**/cache/
+**/typechain-types/
+
+# Hardhat
+smart_contract/artifacts/
+smart_contract/cache/
+smart_contract/typechain-types/
+smart_contract/deployments/
+
+# React Native / Expo
+mobile/.expo/
+mobile/.expo-shared/
+mobile/dist/
+mobile/web-build/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# Android
+mobile/android/app/build/
+mobile/android/build/
+mobile/android/.gradle/
+*.apk
+*.aab
+
+# iOS
+mobile/ios/Pods/
+mobile/ios/build/
+*.ipa
+*.xcworkspace
+*.xcuserdata
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# Misc
+*.pem
+*.bak
+*.tmp
+*.temp
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vercel/
+.serverless/
+
+# Local development
+.local/
+tmp/
+temp/
+
+# Private keys and sensitive data
+private_keys/
+secrets/
+*.private
+*.secret
